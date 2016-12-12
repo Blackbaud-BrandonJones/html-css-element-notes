@@ -1,0 +1,66 @@
+<!-- Declaring your doctype is a best practice.  Not required for html5, but html4.x requires this.   This tells your browser to expect an html document. -->
+<!DOCTYPE html>
+
+<!-- Your outermost tag should be <html>  </html>   These tags wrap all the html you will write in your page. -->
+<html>
+  <!-- Your first element block should be your <head> </head> tags.   These tags contain all the meta data for your page.   Including the <title>, <link> to your css, or importing fonts / icons from fontawesome / google fonts. -->
+  <head>
+    <meta charset="utf-8">
+    <!--sets the title for your page.   This appears in your tab at the top of your browser, and lets search engines find your site by title -->
+    <title>My Title</title>
+    <!--This link tag has a rel of stylesheet to let the page know to pull in css.  the href attribute defines the location of the .css file we created. -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <!-- The body of your html document.  <body> </body>   this element wraps all the other elements you want to render to the page. -->
+  <body>
+    <!-- Your header element should contain the things you would find the top of your page.  this includes web site headers/titles.  top side navigation, -->
+    <header>
+      <!-- h1 - h6 tags should be used for headers and important titles for sections or articles. -->
+      <h1>My Page</h1>
+      <!-- nav elements should be used to wrap navigation and links you want displayed on your web page.-->
+      <nav>
+        <!-- ul or ol are unorder or ordered lists.  These lists are a great way to group things of a similar nature and create a list.   like a list of links. -->
+        <ul>
+          <!-- li tags are used as list items.  Each item in your list needs to be wrapped in one of these elements-->
+          <li>
+            <!-- a tags, or anchor tags, are elements that are used as links to other pages.  the href attribute is where you would put in the URL / link to your other pages. -->
+            <a href="https://www.google.com">Google</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- a section tag is an element that is used to divide up sections of your page.  Each section should contain material that relates to each other. -->
+    <section>
+      <!-- an article tag is an element that contains data and information that all relates to each other.   The information inside each one of these articles could stand alone and be it's own page if it needed to. -->
+      <article class="">
+          <h3>Section title</h3>
+          <!-- an img tag contains a link to an image.   Because there is no closing </img> tag,  this is considered a void tag.   It contains a link in the src="" attribute that will hold the URL or location of your image.   the alt attribute is alternate text.   This should have a sentence that describes your image.-->
+          <img src="" alt="">
+          <!--p tags are paragraph elements.   They should wrap large chunks of text that have some sort of explination or data that a user would read through. -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <!-- span tags are a great way to grab small snippets of text.  These should only contain a few words at most.   So some extra text on the page you may want to caption an image or sub text a paragraph. -->
+          <span>Sub text</span>
+
+      </article>
+      <!-- an aside is an element that contains information relating to the article, but isn't directly about the article itself.   an Example would be an Article would hold a youtube video, and information about that video, an aside would hold links to other videos that are similar to the main article. -->
+      <aside>
+        <!-- This ordered list has an id attribute.  an id is a unique value assigned to one element.   This can be used by css or javascript to grab a specific element on the page.   Only ever assign a unique id to one element. -->
+        <ol id="my-odered-list">
+          <li>Related Information</li>
+          <li>More articles</li>
+          <li>Stuff about shoes</li>
+        </ol>
+      </aside>
+    </section>
+    <!-- you can have many sections on one page!  This section has a class attirbute.  classes can be put on multiple elements and can be used as a way for css or javascript to grab and style those elements all at once. -->
+    <section class="my-class">
+    </section>
+    <!-- the footer tag is used as an element that holds information you want at the bottom of your page.   Footer information is usually things like, copyright information, bottom navigation links, terms and conditions etc. -->
+    <footer>
+    </footer>
+    <!-- At the very bottom of your html page, inside the body, but below the footer.  We can use the script src tag to load in our javascript files.   the src attribute is used to define the location of your javascript file. -->
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

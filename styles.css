@@ -1,0 +1,42 @@
+/**
+*  styling an element by tag
+*  to style an element, we grab it by the tag / element we have in our html.
+*  in this case we are grabbing the <section> </section> element.   This will grab
+*  ALL the elements of that type on the page.
+*/
+
+section {
+  background-color: blue;
+  min-height: 300px;
+  width: 100%;
+}
+
+/**
+*  styling an element by class
+*  to style an element, we grab it by the class attribute on the
+*  element we have in our html. In this case we are grabbing
+*  the .my-class elements.   This will grab
+*  ALL the elements with that class on the page.
+*  Styling an element by class will over ride any elements styled
+* just by their selector.
+*  to tell css we are grabbing a class, we need to start it with a .
+*/
+
+.my-class {
+  background-color: red;
+}
+
+/**
+*  styling an element by id
+*  to style an element, we grab it by the id attribute on the
+*  element we have in our html. In this case we are grabbing
+*  the #my-odered-list elements.   This will grab
+*  ALL the elements with that id on the page.
+*  Styling an element by id will over ride any elements styled
+*  just by their selector or by class.
+*  to tell css we are grabbing an id, we start it with a #.
+*/
+
+#my-ordered-list {
+  background-color: yellow;
+}
